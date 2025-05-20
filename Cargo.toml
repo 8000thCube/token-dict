@@ -1,5 +1,6 @@
 [package]
 authors = ["Aili Nierengarten <aili.nierengarten@gmail.com>"]
+description = "basic dictionary based tokenization"
 documentation = "https://docs.rs/token-dict"
 edition = "2024"
 name = "token-dict"
