@@ -1,7 +1,11 @@
 [package]
-name = "token-dict"
-version = "0.1.0"
+authors = ["Aili Nierengarten <aili.nierengarten@gmail.com>"]
+documentation = "https://docs.rs/token-dict"
 edition = "2024"
+name = "token-dict"
+license = "MIT"
+version = "0.1.0"
+repository = "https://github.com/8000thCube/token-dict"
 
 [dependencies]
 ptrie = "0.7.2"
