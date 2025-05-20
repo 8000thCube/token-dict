@@ -1,5 +1,5 @@
 pub fn main(){
-	let tokenizer:TokenDict=BufReader::new(File::open("日本語.txt").unwrap()).lines().filter_map(Result::ok).collect();
+	let tokenizer:TokenDict=BufReader::new(File::open("words.txt").unwrap()).lines().filter_map(Result::ok).collect();
 	let tokens:Vec<u32>=tokenizer.tokenize_str("スペースは不要です").collect();
 	let detokens:String=tokenizer.detokenize_str(&tokens).collect();
 
