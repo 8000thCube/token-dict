@@ -26,7 +26,7 @@ possible output (id sequence depends what's in words.txt):
 [375018, 32, 403933, 32, 410301, 32, 410782]
 "some text to tokenize"
 ```
-this tokenizer finds the next token based on whether it's a prefix of the remaining text, so it doesn't need to split on word boundaries first
+this tokenizer finds the next token based on whether it's a prefix of the remaining text, so despite being designed for word level tokenization it doesn't need to split on word boundaries first
 ```rust
 pub fn main(){
 	let tokenizer:TokenDict=BufReader::new(File::open("words.txt").unwrap()).lines().filter_map(Result::ok).collect();
